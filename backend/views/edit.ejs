@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main w-full text-white min-h-screen bg-zinc-900 p-10">
+       
+        <a href="/" class="text-blue-500 inline-block mb-10"> Go back to home</a>
+        
+         <form action="/edit" method="post">
+            <input name="previous" type="text" class="block w-1/4 text-zinc-600 placeholder:ml-4 rounded-md  py-2 bg-zinc-800  " disabled="true" value="<%= filename %>"
+                placeholder="Previous name">
+            <input name="new" class="block w-1/4 rounded-md mt-2 px-5 py-2 bg-zinc-800 resize-none"
+                placeholder="new name"/>
+            <input type="submit" class="mt-2 bg-yellow-600 px-5 py-2 rounded-md" value="Update name">
+</form>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src=""></script>
+
+</body>
+
+</html>
